@@ -1,7 +1,7 @@
 
 $(function(){
 function loadLocations(){
-		$.getJSON( "/api/students/", function(locations) {
+		$.getJSON( "/api/locations/", function(locations) {
 		console.log(locations);
 		var message = "no result";
 		if(locations.length>0){
