@@ -3,6 +3,7 @@ var chance = new Chance();
 
 var express = require('express');
 var app = express();
+var ip = require("ip");
 
 app.get('/', function (req, res) {
   res.send(generateLocations());
@@ -15,12 +16,13 @@ app.listen(3000, function () {
 function generateLocations(){
 
 	var numberOfLocations = chance.integer({
-		min:0,
+		min:1,
 		max:10});
 		
 	console.log(numberOfLocations);
 	
 	var locations = [];
+	locations.push(ip.address());
 	
 	for(var i = 0; i< numberOfLocations; i++){
 	

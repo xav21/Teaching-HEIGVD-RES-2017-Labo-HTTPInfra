@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Landing Page - Start Bootstrap Theme</title>
+    <title>RES</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,9 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Welcome to RES ! </h1>
+						<h2><?php echo $_SERVER['SERVER_ADDR']; ?></h2>
                         <h3>Xavier Vaz Afonso & Adrian Di Pietro </h3>
+			<h2 class="test2"></h2>  
 			<h2 class="test"></h2>                       
 			<hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
